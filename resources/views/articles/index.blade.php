@@ -2,11 +2,12 @@
 
 @section('content')
 <div class="container-fluid">
+    <th><a href="{{route('articles')}}"  class=" btn btn-successgit text-light float-right">back</a></th>
 
  <table class="table table-light">
  @if(Auth::user()->is_admin==1)
 
-     <a href="{{route('add_article')}}" class="btn btn-info text-light float-right mr-4 px-5 mb-1">Add</a>
+     <a href="{{route('add_article')}}" class="btn btn-info text-light float-right mr-1 px-5 mb-1">Add</a>
      @endif
      <thead class="thead-light">
          <tr>
